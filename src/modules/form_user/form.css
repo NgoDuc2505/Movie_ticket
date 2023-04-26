@@ -1,0 +1,90 @@
+.myForm{
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.386);
+    padding: 20px;
+    border-radius: 5px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+.textInForm{
+   color: aliceblue;
+    text-align: center;
+}
+.statusSeat{
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    margin: 20px 0;
+}
+.status{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.status p{
+    margin: 0;
+}
+.seatBox{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 6px;
+}
+.seatBox3{
+    background-color: #fff;
+    border: orange 2.5px solid;
+}
+.seatBox4{
+    width: 60px;
+    background-color: #fff;
+    border: orange 2.5px solid;
+    color: black;
+    text-align: center;
+}
+.seatBox2{
+    background-color: green;
+}
+.formInput{
+    margin: 20px 0;
+}
+.formGroup{
+    margin-bottom: 20px;
+}
+.formGroup input{
+   background-color: #fff;
+   color: black;
+}
+.infoTable{
+    width: 100%;
+    margin: 20px 0;
+}
+tbody tr{
+    height: 30px;
+}
+tbody th,
+tbody td{
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.action button{
+    margin-right: 20px;
+}
+.customerInfo{
+    color: #fff;
+}
+.customerName{
+    color: aquamarine;
+}
+.amountSeat{
+    color: burlywood;
+    font-weight: 900;
+}
+
+@media screen and (max-width:1367px){
+    .status p{
+        font-size: 12px;
+    }
+}
+

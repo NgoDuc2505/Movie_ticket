@@ -1,0 +1,129 @@
+.screen{
+    border-bottom: 50px solid rgb(255, 159, 95);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width:80%;
+    filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+    font-size: 25px;
+    color: #fff;
+    margin: auto;
+}
+.rowNumber,
+.colAphabel{
+    /* font-size: 25px; */
+    width: 50px;
+    height: 35px;
+    background: none;
+    border:none;
+    margin-bottom: 1%;
+    font-size: 30px;
+    color: yellow;
+    
+}
+.rowSeat{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.colAphabel{
+    margin: 5px 0;
+}
+.colSeat{
+    padding-left: 30px;
+}
+.rowOfAlphabel{
+    display: flex;
+}
+.rowOfAlphabel:nth-child(1){
+    display: none;
+}
+.seatByRowAlphabel{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+}
+.seat{
+    border: 3px solid orange;
+    width: 50px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.297);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+}
+.choosed{
+    background-color:green;
+    border: 3px green solid;
+}
+.seatByRowAlphabel .disable{
+    border: 3px solid orange;
+    background-color: orange;
+    cursor: no-drop!important;
+}
+#box1,#box2,#box3,#box4,#box5,#box6{
+    width: 100px;
+    text-align: center;
+}
+.showWay{
+    width: 82%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: red;
+    font-weight: 900;
+    align-items: center;
+}
+.centerWay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:1367px){
+    .seat{
+        font-size: 12px;
+    }
+    .rowNumber{
+        width: 40px;
+    }
+    .seatByRowAlphabel{
+        gap: 10px;
+    }
+    .colAphabel {
+        width: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:992px){
+    .rowNumber{
+        font-size: 19px;
+        width: 30px;
+    }
+    .rowSeat{
+        width: 80%;
+        margin-right: 7%;
+    }
+}
+@media screen and (max-width:860px){
+    .colSeat{
+        padding-left: 0;
+    }
+    .seatByRowAlphabel{
+        gap: 2px;
+    }
+    .rowSeat{
+        width: 83%;
+        gap: 4px;
+        margin-right: 8%;
+    }
+}
